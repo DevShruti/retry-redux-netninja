@@ -4,7 +4,7 @@ import { decrement, increment, incrementByAmount } from "./redux/counter";
 import "./styles.css";
 
 export default function App() {
-  const { count } = useSelector((state) => state.counter);
+  const  count  = useSelector((state) => state.counter.count);
   const dispatch = useDispatch();
   return (
     <div className="App">
